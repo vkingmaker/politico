@@ -71,7 +71,6 @@ div.landingPage {
     justify-content: center;
     align-items: center;
 }
-
 div.landingPage div {
     min-width: 300px;
     width: 50%;
@@ -89,7 +88,6 @@ div.landingPage div span {
     font-size: 0.7rem;
     margin-top: 3rem;
 }
-
 div.landingPage h1 {
     text-transform: uppercase;
     margin-bottom: 1rem;
