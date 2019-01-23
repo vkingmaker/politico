@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Bariol-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bariol-Regular'), url('Bariol.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bariol-Regular';
+}
+
+.fa {
+    margin-right: 0.3rem;
+}
+
+body {
+    min-width: 100vw;
+}
+
+.mainContent {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(270px, 1fr));
+    grid-template-rows: 49px 1fr 50px;
+    grid-template-areas:
+        "navbar",
+        "landingPageContent",
+        "footer";
+}
+
+header {
+    border-bottom: 1px dotted #eee;
+    grid-area: 'navbar';
+    position: relative;
+    z-index: 2000;
+    box-shadow: 1px -10px 70px #000;
+}
+
+nav {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    min-width: 10rem;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+div.landingPage {
+    grid-area: 'landingPageContent';
+    background: linear-gradient(to top, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('../img/worldPolitics.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.landingPage div {
+    min-width: 300px;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, .4);
+    border: 1px solid #eee;
+    border-top: 4px solid rgba(0, 0, 0, .4);
+    padding: 1rem;
+    margin: auto;
+    text-align: justify;
+}
+
+div.landingPage div span {
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 3rem;
+}
+div.landingPage h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+div.landingPage p {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-top: 1px dotted #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
