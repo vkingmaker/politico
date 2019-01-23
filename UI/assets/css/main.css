@@ -71,33 +71,6 @@ div.landingPage {
     align-items: center;
 }
 
-/* div.landingPage div {
-    min-height: 30%;
-} */
-
-/* .politicoQuoter {
-    border-top:1px solid blue;
-    border-right:1px solid blue;
-    border-radius: 0 9px 0 0;
-    width: 10%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.politicoQuoter span {
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.politicoQuoter img {
-    width: 60%;
-    height: 50%;
-    border-radius: 50%;
-} */
-
 div.landingPage div {
     min-width: 300px;
     width: 50%;
@@ -115,19 +88,6 @@ div.landingPage div span {
     font-size: 0.7rem;
     margin-top: 3rem;
 }
-
-/* .politicoQuote {
-    border-bottom:1px solid blue;
-    background-color:#fff;
-    border-radius:0 9px 0 0;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.1rem;
-    text-align: justify;
-    line-height: 1.2rem;
-} */
 
 div.landingPage h1 {
     text-transform: uppercase;
