@@ -162,6 +162,7 @@ input {
 
 button {
     border-style: none;
+    border-radius:5px;
     font-size: 1.2rem;
     transition: background-color 1s ease-in-out 0.5s,
         color .5s linear 1s;
@@ -182,6 +183,7 @@ div.signupPage>div>div:nth-child(1) button {
     margin-top: 1rem;
     max-width: 150px !important;
     background-color: blue;
+    color:#fff;
 }
 
 div.signupPage h2 {
