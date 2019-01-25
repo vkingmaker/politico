@@ -61,7 +61,7 @@ nav ul {
 nav li {
     display: inline-block;
     font-size: 1rem;
-    margin-right:1rem;
+    margin-right: 1rem;
 }
 
 div.landingPage {
@@ -121,6 +121,65 @@ div.signupPage {
     align-items: center;
 }
 
+.mainPage {
+    background: linear-gradient(to top, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('../img/worldPolitics.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.mainPage>div {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+table {
+    margin-top: 2rem;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid #000;
+    padding: 0.5rem;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 0.5rem;
+}
+.cBtn{
+    display:flex;
+    justify-content: flex-end;
+}
+.createBtn{
+    width: 10%;
+    height: 40px;
+    background-color:#000;
+    color:#fff !important;
+    font-size:0.9rem;
+}
+.createBtn a,
+.viewBtn a,
+.editBtn a{
+    color:#fff !important;
+}
+.editBtn{
+    font-size:0.6rem;
+    background-color:#000;
+    color:#fff;
+    min-height: 20px;
+    min-width:30px;
+}
+.delBtn{
+    background-color:red;
+    margin-left:3px;
+}
+.intBtn{
+    padding:0.5rem;
+}
 div.signupPage>div {
     width: 70%;
     display: flex;
@@ -163,7 +222,7 @@ input {
 
 button {
     border-style: none;
-    border-radius:5px;
+    border-radius: 5px;
     font-size: 1.2rem;
     transition: background-color 1s ease-in-out 0.5s,
         color .5s linear 1s;
@@ -184,7 +243,7 @@ div.signupPage>div>div:nth-child(1) button {
     margin-top: 1rem;
     max-width: 150px !important;
     background-color: blue;
-    color:#fff;
+    color: #fff;
 }
 
 div.signupPage h2 {
@@ -202,25 +261,29 @@ button:hover {
     border-radius: 3px;
 }
 
-@media(max-width:768px){
-    div.signupPage>div{
+@media(max-width:768px) {
+    div.signupPage>div {
         flex-direction: column;
-        width:90%;
-        margin:2rem;
-        font-size:1.6rem;
+        width: 90%;
+        margin: 2rem;
+        font-size: 1.6rem;
     }
-    div.signupPage>div>div:nth-child(1) button{
-        margin-bottom:1rem;
+
+    div.signupPage>div>div:nth-child(1) button {
+        margin-bottom: 1rem;
     }
+
     div.signupPage>div>div:nth-child(1),
-    div.signupPage>div>div:nth-child(2){
-        min-width:100%;
+    div.signupPage>div>div:nth-child(2) {
+        min-width: 100%;
     }
-    div.signupPage>div a{
-        font-size:1rem;
+
+    div.signupPage>div a {
+        font-size: 1rem;
     }
+
     div.signupPage>div h3,
-    div.signupPage>div h2{
-        font-size:1.6rem !important;
+    div.signupPage>div h2 {
+        font-size: 1.6rem !important;
     }
 }
