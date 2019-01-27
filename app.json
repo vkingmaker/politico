@@ -1,0 +1,6 @@
+{
+  "name": "politico",
+  "description": "Politico API is a definition and implementation of endpoints used to manage the an e-voting and management system",
+  "repository": "https://github.com/vkingmaker/politico.git",
+  "keywords": ["node", "express", "heroku","Andela","API","Babel"]
+}
