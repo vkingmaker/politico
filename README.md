@@ -33,6 +33,7 @@ $ npm install
 $ npm start 
 ```
 
+
 By running `$ git clone https://github.com/vkingmaker/politico.git` in your terminal/console it will fetch the project files from the remote repository and save to your preferred location on your hard drive, then `cd politico` will change your current directory to the the location of the cloned project on your computer. Because the dependencies used to build this application was not sent to the remote repository you have to run `npm install` to install the necessary dependencies and finally `npm start` to launch the application using a local server.
 
 
