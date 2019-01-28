@@ -3,6 +3,7 @@ define({ "api": [
     "type": "post",
     "url": "/parties",
     "title": "Creates a new political party",
+    "name": "CreateParties",
     "group": "Parties",
     "parameter": {
       "fields": {
@@ -11,8 +12,22 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "title",
-            "description": "<p>Task title</p>"
+            "field": "name",
+            "description": "<p>Party name</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "hqAddress",
+            "description": "<p>Party Head Quaters</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "logoUrl",
+            "description": "<p>Party logo</p>"
           }
         ]
       },
@@ -54,20 +69,13 @@ define({ "api": [
             "optional": false,
             "field": "name",
             "description": "<p>party name</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Date",
-            "optional": false,
-            "field": "created_at",
-            "description": "<p>Register date</p>"
           }
         ]
       },
       "examples": [
         {
           "title": "Success",
-          "content": "HTTP/1.1 200 OK\n{\n  \"status\": 1,\n \"data\":[{\"id\":1,name:\"Lagos\"}]\n}",
+          "content": "HTTP/1.1 200 OK\n{\n  \"status\": 1,\n  \"data\":[{\"id\":1,name:\"Lagos\"}]\n}",
           "type": "json"
         }
       ]
@@ -82,14 +90,14 @@ define({ "api": [
       ]
     },
     "version": "0.0.0",
-    "filename": "./build/server/src/parties.controller.js",
-    "groupTitle": "Parties",
-    "name": "PostParties"
+    "filename": "./build/server/src/politicoRouter.js",
+    "groupTitle": "Parties"
   },
   {
     "type": "post",
     "url": "/parties",
     "title": "Creates a new political party",
+    "name": "CreateParties",
     "group": "Parties",
     "parameter": {
       "fields": {
@@ -177,7 +185,6 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "./server/src/politicoRouter.js",
-    "groupTitle": "Parties",
-    "name": "PostParties"
+    "groupTitle": "Parties"
   }
 ] });

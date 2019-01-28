@@ -1,32 +1,32 @@
-'use strict';
-let chai = require('chai');
-let chaiHttp = require('chai-http');
+// 'use strict';
+let request = require('supertest');
 let server = require('../app');
-let should = chai.should();
+let expect = require('expect');
 
-
-chai.use(chaiHttp);
 /**
  * Test suite for /POST `/api/v1/parties`
  * 
  */
 
 describe('/POST /api/v1/parties', () => {
-it('it should ADD a new political party to the data structure', (done) => {
-  const party = {
-    name:'PPS',
-    hqAddress: 'Lagos',
-    logoUrl: '/public/logo/PPS.png'
-   };
-    chai.request(server)
+  it('it should ADD a new political party to the data structure', (done) => {
+    const party = {
+      name: 'PPS',
+      hqAddress: 'Lagos',
+      logoUrl: '/public/logo/PPS.png',
+    };
+    request(server)
       .post('/api/v1/parties')
       .send(party)
-      .end((err, res) => {
-        res.should.have.status(201);
-        res.body.should.be.a('object');
-        res.body.data[0].should.have.property('name').eql("PPS");
-        res.body.data[0].should.have.property('id').eql(1);
-        done();
-      });
+      .expect(201)
+      .expect((res) => {
+        expect(res.body).toMatchObject({
+          status: 201,
+          data: [{
+            id:1,
+            name:'PPS'
+          }]
+        })
+      }).end(done);
   });
 });

@@ -18,11 +18,11 @@ app.use('/api/v1', politicoRouter);
 
 // Catch 404 and forward to error handler
 // Error handler
-// app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
-//   res.status(err.status || 500).send({
-//     message: err.message,
-//   });
-// });
+app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
+  res.status(err.status || 500).send({
+    message: err.message,
+  });
+});
 const { PORT = 3000 } = process.env;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`)); // eslint-disable-line no-console
 
