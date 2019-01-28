@@ -1,6 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/vkingmaker/politico/badge.svg?branch=develop)](https://coveralls.io/github/vkingmaker/politico?branch=develop)
-[![Build Status](https://travis-ci.com/vkingmaker/politico.svg?branch=develop)](https://travis-ci.com/vkingmaker/politico)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.com/vkingmaker/politico.svg?branch=develop)](https://travis-ci.com/vkingmaker/politico)
+
 # Politico
 > Let's fight against corruption and malpractices in our continent to a great extent.
 
