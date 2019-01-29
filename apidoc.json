@@ -1,0 +1,8 @@
+{
+    "name": "Politico API documentation",
+    "version": "1.0.0",
+    "description": "API documentation of a political party management and e-voting system",
+    "template": {
+        "forceLanguage": "en"
+    }
+}

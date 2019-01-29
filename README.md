@@ -1,4 +1,3 @@
-
 [![Coverage Status](https://coveralls.io/repos/github/vkingmaker/politico/badge.svg?branch=develop)](https://coveralls.io/github/vkingmaker/politico?branch=develop)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://travis-ci.com/vkingmaker/politico.svg?branch=develop)](https://travis-ci.com/vkingmaker/politico)
