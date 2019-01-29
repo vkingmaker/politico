@@ -3,7 +3,7 @@ const path = require('path');
 const ejs = require('ejs');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-const politicoRouter = require('./build/server/src/politicoRouter');
+const politicoRouter = require('./build/server/src/routes/politicoRouter');
 
 const app = express();
 

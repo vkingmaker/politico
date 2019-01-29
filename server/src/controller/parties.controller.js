@@ -1,4 +1,4 @@
-import parties from './mock/parties.db';
+import parties from '../mock/parties.db';
 
 const partyRecords = parties();
 
